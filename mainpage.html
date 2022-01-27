@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="mainpage.css"> -->
+</head>
+<body>
+    <header>
+
+    
+    <div class="banner">
+       <div class="navbar">
+            
+            <img src="translogo.png" class="logo">
+            
+            <ul>
+                <li><a href="index.php">About Us</a></li>
+                <li><a href="index.php#aboutus">Customer Care</a></li>
+                
+
+            </ul>
+        </div>
+        <div class="content">
+            <h1>ONE STOP SOLUTION</h1>
+            <p>All your problems end here... </p>
+            
+            <div class="buttons">
+                <form action="http://localhost/budget%20management/login.php"><button type="submit" ><span></span> BUDGET MANAGEMENT</button></form>
+                    <form action="login.php"> <button type="submit"><span></span> JOB FINDER </button></form>
+                <form action="marks.html"><button type="submit"><span></span> ANALYSE MARKS</button>
+                    
+            </div></form>
+        </div>
+    </div></header>
+</body>
+</html>
+<style>
+    *   
+{
+    margin:0;
+    padding: 0;
+    font-size: sans-serif;
+}
+header{
+ width: 100%;
+ height:100vh;
+ background-image: url("log.jpeg");
+ background-size: cover;
+ background-position: center;
+ z-index: 1;
+ position:relative;
+}
+
+.navbar{
+width: 85%;
+/* margin: auto; */
+/* padding: 35px 0; */
+/* display:flex ; */
+align-items: center;
+/* justify-content: space-between; */
+}
+
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    left:80%;
+    position: relative;
+}
+.navbar ul li a{
+text-decoration: none;
+top:30px;
+/* color: orange; */
+/* right:10px; */
+text-transform: uppercase;
+font-size: 20px;
+width: 200px;
+padding: 15px 0;
+text-align: center;
+margin: 20px 10px;
+border-radius: 15px;
+font-weight: bold;
+border: 4px solid #00719f;
+background: transparent;
+color: maroon;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+
+}
+/* .navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: maroon;
+    
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+} */
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:maroon;
+}
+.content h1{
+    font-size: xx-large;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: x-large;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid maroon;
+    background: transparent;
+    color: maroon;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+}
+span{
+    background: white;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover{
+    border: none;
+}
+.logo{
+position:absolute;
+width: 180px;
+height:80px;
+top:10px;
+left:20px;
+/* cursor: pointer; */
+z-index: 0;
+}
+</style>
